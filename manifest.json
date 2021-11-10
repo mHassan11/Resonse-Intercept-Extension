@@ -1,0 +1,19 @@
+{
+   "name": "RequestInterceptor",
+   "version": "1.0",
+   "manifest_version": 3,
+   "background": {
+     "service_worker": "background.js"
+   },
+   "action": {},
+   "host_permissions": [
+      "<all_urls>",
+      "https://*.twitter.com/*"
+   ],
+   "permissions": [  
+      "history", 
+      "management", 
+      "tabs", 
+      "webNavigation", 
+      "webRequest" ]
+}
